@@ -1,7 +1,7 @@
 from user import User
 from cart import Cart
-
-class Customer(User):
+from ownable import ownable 
+class Customer(User,ownable):
 
     def __init__(self, name):
         super().__init__(name)

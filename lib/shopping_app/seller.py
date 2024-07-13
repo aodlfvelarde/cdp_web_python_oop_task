@@ -1,5 +1,5 @@
 from user import User
-
-class Seller(User):
+from ownable import ownable
+class Seller(User,ownable):
     def __init__(self, name):
         super().__init__(name)

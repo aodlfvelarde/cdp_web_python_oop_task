@@ -1,7 +1,7 @@
 class Wallet:
 
     def __init__(self, owner):
-        self.set_owner(owner)
+        set_owner=owner
         self.balance = 0
 
     def deposit(self, amount):

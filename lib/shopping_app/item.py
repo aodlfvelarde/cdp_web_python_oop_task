@@ -1,7 +1,9 @@
-class Item:
+from ownable import ownable
+class Item(ownable):
     instances = []
 
     def __init__(self, name, price, owner=None):
+        super().__init__()
         self.name = name
         self.price = price
         self.set_owner(owner)
